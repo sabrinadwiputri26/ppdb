@@ -1,0 +1,249 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; } 
+
+ .ftco-section {
+  padding: 13.5em ; } 
+
+.ftco-no-pt {
+  padding-top: 0; }
+
+.ftco-no-pb {
+  padding-bottom: 0; }
+
+  .ftco-section {
+    min-height: 100vh;
+    display: flex;
+    background-color: #20548d;
+    background-size: cover;
+  }
+
+.heading-section {
+  font-size: 28px;
+  color: #000; }
+
+.img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.wrap {
+  width: 100%;
+  overflow: hidden;
+  background: #fdfdfd;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24); }
+
+.img, .login-wrap {
+  width: 50%; }
+  @media (max-width: 991.98px) {
+.img, .login-wrap {
+      width: 100%; } }
+.img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../img/login.png);
+}
+
+@media (max-width: 767.98px) {
+  .wrap .img {
+    height: 250px; } }
+
+.login-wrap {
+  position: relative;
+  background: #ffff;
+ }
+
+.form-group {
+  position: relative; }
+  .form-group .label {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+    font-weight: 700; 
+  }
+  .form-group a {
+    color: rgb(128, 128, 128); }
+
+.form-control {
+  height: 48px;
+  /* background: rgba(255, 255, 255, 0.864); */
+  color: #000;
+  margin-top: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.1); 
+}
+  .form-control::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: rgba(0, 0, 0, 0.2) !important; 
+  }
+  .form-control::-moz-placeholder {
+    /* Firefox 19+ */
+    color: rgba(0, 0, 0, 0.2) !important; 
+  }
+  .form-control:-ms-input-placeholder {
+    /* IE 10+ */
+    color: rgba(0, 0, 0, 0.2) !important; 
+  }
+  .form-control:-moz-placeholder {
+    /* Firefox 18- */
+    color: rgba(0, 0, 0, 0.2) !important; 
+  }
+  .form-control:focus, .form-control:active {
+    outline: none !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid #1b078fe5; 
+  }
+
+.checkbox-wrap {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+}
+
+.btn {
+  font-size: 2rem;
+  color: rgb(70, 94, 202);
+  margin-top: 1rem;
+  margin-left: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0.3rem 0.5rem;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  padding: 0.7rem 3.5rem;
+  border-radius: 5rem;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  overflow: hidden;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-wrap input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0; 
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0; 
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "\f0c8";
+  font-family: "FontAwesome";
+  position: absolute;
+  color: rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  margin-top: -4px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; 
+}
+  @media (prefers-reduced-motion: reduce) {
+    .checkmark:after {
+      -webkit-transition: none;
+      -o-transition: none;
+      transition: none; } 
+    }
+
+/* Show the checkmark when checked */
+.checkbox-wrap input:checked ~ .checkmark:after {
+  display: block;
+  content: "\f14a";
+  font-family: "FontAwesome";
+  color: rgba(0, 0, 0, 0.2); 
+}
+
+/* Style the checkmark/indicator */
+.checkbox-primary {
+  color: #4c464b; 
+}
+.checkbox-primary input:checked ~ .checkmark:after {
+  color: #4c4a46; 
+}
+
+.btn {
+  cursor: pointer;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  font-size: 15px;
+  padding: 10px 20px; 
+}
+
+.form-group.mb-3 .form-control:focus{
+  box-shadow: 0px 0px 0px 3px rgb(200, 199, 248);
+  border-color: rgb(227, 226, 255);;
+}
+
+  .form-control.btn{
+    background-color:rgb(89, 87, 254);
+    border-color: rgb(89, 87, 254);;
+    color: #fdfdfd;
+  }
+
+  .form-control.btn:hover{
+    background-color: rgb(89, 87, 214);
+    color: #bdc5f9;
+  }
+  .btn:hover, .btn:active, .btn:focus {
+    outline: none; 
+  }
+
+
+  .about .row .image2 img{
+    height:426px;
+    width:auto;
+    border-right: 1px solid white;
+  }
+
+  .about .row .minicontent{
+    height: 213px;
+    width:  auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+
+  .minicontent h2{
+    padding-top: 10px;
+  }
+
+  .about .row .minicontent img{
+    height: 213px;
+    width:  auto;
+    border: 1px solid white;
+  }
+
+  .about .row .col-6{
+    padding: 0;
+  }
+
+  .about .row{
+    padding: 0;
+  }
